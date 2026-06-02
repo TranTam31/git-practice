@@ -4,3 +4,4 @@
 
 - Login
 - Register
+- Gmail sync
