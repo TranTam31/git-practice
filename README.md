@@ -5,3 +5,4 @@
 - Login
 - Register
 - Payment
+- Gmail sync
