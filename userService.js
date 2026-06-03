@@ -6,7 +6,12 @@ const createUser = async (data) => {
   return User.create(data);
 };
 
+const deleteUser = async (id) => {
+  return User.findByIdAndDelete(id);
+};
+
 export default {
   getUserById,
   createUser,
+  deleteUser,
 };
