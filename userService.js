@@ -6,6 +6,10 @@ const createUser = async (data) => {
   return User.create(data);
 };
 
+const deleteUser = async (id) => {
+  return User.findByIdAndDelete(id);
+};
+
 const updateUser = async (id, data) => {
   return User.findByIdAndUpdate(id, data, {
     new: true,
@@ -15,5 +19,6 @@ const updateUser = async (id, data) => {
 export default {
   getUserById,
   createUser,
+  deleteUser,
   updateUser,
 };
